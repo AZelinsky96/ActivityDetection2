@@ -55,7 +55,7 @@ probabilities  = XGB_model.predict_proba(sample1)
 
 app = dash.Dash()
 
-
+server = app.server
 
 
 
@@ -261,7 +261,7 @@ def update_probailites(n_intervals):
     
 
 if __name__ == ("__main__"): 
-    server = app.server
+    
     app.run_server(debug = True)
     
    
