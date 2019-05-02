@@ -1,0 +1,1 @@
+web: gunicorn FallDetectionDashApplication2:server
